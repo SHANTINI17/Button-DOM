@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button id="red" class="button" onclick="changered()">RED</button>
+    <button id="blue" class="button" onclick="changeblue()">BLUE</button>
+    <button id="green" class="button" onclick="changegreen()">GREEN</button>
+    <button id="reset" class="button" onclick="defaultcolour()">RESET</button>
+</body>
+<script>
+    function changered(){
+        const c=document.getElementById("red");
+        const d=document.getElementById("body");
+        c.style.backgroundColor='red';
+        d.style.backgroundColor='red';
+
+    }
+    function changeblue(){
+        const c=document.getElementById("blue");
+        const d=document.getElementById("body");
+        c.style.backgroundColor='blue';
+        d.style.backgroundColor='blue';
+    }
+    function changegreen(){
+        const c=document.getElementById("green");
+        const d=document.getElementById("body");
+        c.style.backgroundColor='green';
+        d.style.backgroundColor='green';
+    }
+    function defaultcolour(){
+        const a=document.getElementById("red");
+        const b=document.getElementById("blue");
+        const c=document.getElementById("green");
+        const d=document.getElementById("body");
+        a.style.backgroundColor='white';
+        b.style.backgroundColor='white';
+        c.style.backgroundColor='white';
+        d.style.backgroundColor='white';
+    }
+</script>
+</html>
